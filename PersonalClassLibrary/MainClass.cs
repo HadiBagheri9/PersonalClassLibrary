@@ -13,16 +13,7 @@ namespace PersonalClassLibrary
 
         public static bool ToInt32(this object data)
         {
-            flag = Int32.TryParse(data.ToString(), out convertedData);
-
-            if (flag)
-            {
-                return flag;
-            }
-            else
-            {
-                return flag;
-            }
+            return flag = int.TryParse(data.ToString(), out convertedData);
         }
     }
 }
