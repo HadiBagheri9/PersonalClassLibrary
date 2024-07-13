@@ -6,7 +6,7 @@ namespace PersonalClassLibrary
     public static class ConvertDatas
     {
         private static PersianCalendar persianCalendar = new PersianCalendar();
-        private static int convertedDataAsInt32;
+        private static int CanconverteToInt32;
         //private static bool flag;
 
         /// <summary>
@@ -16,7 +16,7 @@ namespace PersonalClassLibrary
         /// <returns></returns>
         public static bool CanConvertToInt32(this object data)
         {
-            return int.TryParse(data.ToString(), out convertedDataAsInt32);
+            return int.TryParse(data.ToString(), out CanconverteToInt32);
         }
 
         /// <summary>
