@@ -34,7 +34,33 @@ namespace PersonalClassLibrary.Data
             return flag;
 
         }
+        public static List<string[]> ReadFromFile(string path, char separator)
+        {
+            List<string[]> lst = new List<string[]>();
 
+            StreamReader st = null;
+
+            try
+            {
+                st = new StreamReader(path, Encoding.UTF8);
+                string line = "";
+                while ((line = st.ReadLine())!=null)
+                {
+                    lst.Add(line.Split(separator));
+                }
+            }
+            catch
+            {
+                return lst;
+            }
+            finally
+            {
+                st.Close();
+                st.Dispose();
+            }
+
+            return lst;
+        }
 
     }
 }
