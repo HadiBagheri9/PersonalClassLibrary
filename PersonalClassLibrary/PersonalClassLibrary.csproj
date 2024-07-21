@@ -44,11 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ConvertDatas.cs" />
+    <Compile Include="Data\SendData.cs" />
     <Compile Include="Notif\Messages.cs" />
     <Compile Include="Data\Csv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\HB_Algorithm_Alpha.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
