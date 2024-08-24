@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ConvertDatas.cs" />
+    <Compile Include="Data\CryptText.cs" />
     <Compile Include="Data\SendData.cs" />
     <Compile Include="Notif\Messages.cs" />
     <Compile Include="Data\Csv.cs" />
