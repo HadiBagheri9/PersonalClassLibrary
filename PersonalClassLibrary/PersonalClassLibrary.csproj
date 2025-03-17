@@ -49,6 +49,7 @@
     <Compile Include="Notif\Messages.cs" />
     <Compile Include="Data\Csv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Authentication.cs" />
     <Compile Include="Security\HB_Algorithm_Alpha.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
