@@ -6,6 +6,18 @@ namespace PersonalClassLibrary.Data
 {
     class SendData
     {
+
+        /// <summary>
+        /// To send an email.
+        /// </summary>
+        /// <param name="displayName"></param>
+        /// <param name="to"></param>
+        /// <param name="subject"></param>
+        /// <param name="body"></param>
+        /// <param name="useHTMLTags"></param>
+        /// <param name="port"></param>
+        /// <param name="enableSSL"></param>
+        /// <returns></returns>
         public static bool SendEmail(string displayName, string[] to, string subject, string body, bool useHTMLTags, int port, bool enableSSL)
         {
             bool flag = true;

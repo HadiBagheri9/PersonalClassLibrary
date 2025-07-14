@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Forms;
 
-namespace PersonalClassLibrary
+namespace PersonalClassLibrary.Notif
 {
     public static class Messages
     {
@@ -11,9 +11,8 @@ namespace PersonalClassLibrary
         /// Show error massage box.
         /// </summary>
         /// <param name="message"></param>
-        public static void MessageBoxError(this string message)
+        public static void MessageBoxError(this string message, string messageType = "Error")
         {
-            messageType = "Error";
             System.Windows.MessageBox.Show(message, messageType, MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
@@ -21,9 +20,8 @@ namespace PersonalClassLibrary
         /// Show warning massage box.
         /// </summary>
         /// <param name="message"></param>
-        public static void MessageBoxWarning(this string message)
+        public static void MessageBoxWarning(this string message, string messageType = "Warning")
         {
-            messageType = "Warning";
             System.Windows.MessageBox.Show(message, messageType, MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
@@ -31,9 +29,8 @@ namespace PersonalClassLibrary
         /// Show information massage box.
         /// </summary>
         /// <param name="message"></param>
-        public static void MessageBoxInformation(this string message)
+        public static void MessageBoxInformation(this string message, string messageType = "Information")
         {
-            messageType = "Information";
             System.Windows.MessageBox.Show(message, messageType, MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }

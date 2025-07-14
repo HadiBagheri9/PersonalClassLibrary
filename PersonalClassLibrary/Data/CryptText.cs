@@ -1,14 +1,19 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using PersonalClassLibrary.Notif;
 using System.Security.Cryptography;
-using PersonalClassLibrary.Security;
 
 namespace PersonalClassLibrary.Data
 {
     public class CryptText
     {
-        
+        /// <summary>
+        /// To encrypt a string of text.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static string Encrypt(string text, string key)
         {
             byte[] iv = new byte[16];
@@ -37,6 +42,12 @@ namespace PersonalClassLibrary.Data
             return Convert.ToBase64String(array);
         }
 
+        /// <summary>
+        /// To decrypt a string of text.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static string Decrypt(string text, string key)
         {
             byte[] iv = new byte[16];

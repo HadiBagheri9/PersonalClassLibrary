@@ -2,6 +2,13 @@
 {
     class HB_Algorithm_Alpha
     {
+
+        /// <summary>
+        /// Encrypt a string of text.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="salt"></param>
+        /// <returns></returns>
         public static string Enc(string text, byte salt)
         {
             string str = text;
@@ -17,6 +24,13 @@
 
             return str;
         }
+
+        /// <summary>
+        /// Decrypt a string of text.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="salt"></param>
+        /// <returns></returns>
         public static string Dc(string text, byte salt)
         {
             string str = text;

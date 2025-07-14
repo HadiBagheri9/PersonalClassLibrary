@@ -7,6 +7,13 @@ namespace PersonalClassLibrary.Data
 {
     class Csv
     {
+        /// <summary>
+        /// Write to a CSV file.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="separator"></param>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static bool WriteToFile(List<string[]> data, string separator, string path)
         {
             bool flag = true;
@@ -34,6 +41,13 @@ namespace PersonalClassLibrary.Data
             return flag;
 
         }
+
+        /// <summary>
+        /// Read from a CSV file.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="separator"></param>
+        /// <returns></returns>
         public static List<string[]> ReadFromFile(string path, char separator)
         {
             List<string[]> lst = new List<string[]>();

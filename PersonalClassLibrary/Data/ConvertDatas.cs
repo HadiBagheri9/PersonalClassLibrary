@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace PersonalClassLibrary
+namespace PersonalClassLibrary.Data
 {
     public static class ConvertDatas
     {
