@@ -51,9 +51,10 @@
     <Compile Include="Notif\Messages.cs" />
     <Compile Include="Data\Csv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Security\Authentication.cs" />
     <Compile Include="Security\HB_Algorithm_Alpha.cs" />
+    <Compile Include="Variables\eyeStarInformation.cs" />
     <Compile Include="Windows\CheckSystemSettings.cs" />
+    <Compile Include="Windows\FileOptions.cs" />
     <Compile Include="Windows\FolderOptions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
