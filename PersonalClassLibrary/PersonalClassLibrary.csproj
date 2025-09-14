@@ -48,6 +48,7 @@
     <Compile Include="Data\ConvertDatas.cs" />
     <Compile Include="Data\CryptText.cs" />
     <Compile Include="Data\SendData.cs" />
+    <Compile Include="Data\Text.cs" />
     <Compile Include="Notif\Messages.cs" />
     <Compile Include="Data\Csv.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
