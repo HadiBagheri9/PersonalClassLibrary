@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # Private Files
-SendData.cs
+/PersonalClassLibrary/Data/SendData.cs
 
 # User-specific files
 *.rsuser
