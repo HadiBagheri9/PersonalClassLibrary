@@ -6,7 +6,7 @@ namespace PersonalClassLibrary.Windows
 {
     public class FileOptions
     {
-        public static bool EncryptFile(string inputFilePath, string outputFilePath, string key)
+        public static bool EncryptFile(string inputFilePath, string outputFilePath, string key, byte[] iv)
         {
             using (FileStream fsInput = new FileStream(inputFilePath, FileMode.Open))
             {
@@ -15,7 +15,7 @@ namespace PersonalClassLibrary.Windows
                     using (AesManaged aes = new AesManaged())
                     {
                         aes.Key = Encoding.UTF8.GetBytes(key);
-                        aes.IV = new byte[16];
+                        aes.IV = iv;
 
                         // Perform encryption
                         ICryptoTransform encryptor = aes.CreateEncryptor();
@@ -29,7 +29,7 @@ namespace PersonalClassLibrary.Windows
             }
         }
 
-        public static bool DecryptFile(string inputFilePath, string outputFilePath, string key)
+        public static bool DecryptFile(string inputFilePath, string outputFilePath, string key, byte[] iv)
         {
             using (FileStream fsInput = new FileStream(inputFilePath, FileMode.Open))
             {
@@ -38,7 +38,7 @@ namespace PersonalClassLibrary.Windows
                     using (AesManaged aes = new AesManaged())
                     {
                         aes.Key = Encoding.UTF8.GetBytes(key);
-                        aes.IV = new byte[16];
+                        aes.IV = iv;
 
                         // Perform encryption
                         ICryptoTransform encryptor = aes.CreateDecryptor();

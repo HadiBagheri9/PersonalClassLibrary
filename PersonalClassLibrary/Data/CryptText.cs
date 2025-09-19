@@ -14,9 +14,8 @@ namespace PersonalClassLibrary.Data
         /// <param name="text"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-        public static string Encrypt(string text, string key)
+        public static string Encrypt(string text, string key, byte[] iv)
         {
-            byte[] iv = new byte[16];
             byte[] array;
 
             using (Aes aes = Aes.Create())
@@ -48,9 +47,8 @@ namespace PersonalClassLibrary.Data
         /// <param name="text"></param>
         /// <param name="key"></param>
         /// <returns></returns>
-        public static string Decrypt(string text, string key)
+        public static string Decrypt(string text, string key, byte[] iv)
         {
-            byte[] iv = new byte[16];
             byte[] buffer = Convert.FromBase64String(text);
 
             try
