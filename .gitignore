@@ -366,3 +366,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /PersonalClassLibrary/Security/Authentication.cs
 /PersonalClassLibrary/Data/CryptText.cs
+/PersonalClassLibrary/Data/DataSender.cs
