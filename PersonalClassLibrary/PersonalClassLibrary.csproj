@@ -57,6 +57,7 @@
     <Compile Include="Windows\CheckSystemSettings.cs" />
     <Compile Include="Windows\FileOptions.cs" />
     <Compile Include="Windows\FolderOptions.cs" />
+    <Compile Include="Windows\SetSystemSettings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
